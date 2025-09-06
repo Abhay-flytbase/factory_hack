@@ -1,0 +1,11 @@
+{
+  "name": "app-react-test",
+  "version": "1.0.0",
+  "description": "Test suite for app-react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests implemented yet\" && exit 0"
+  },
+  "author": "",
+  "license": "ISC"
+}
