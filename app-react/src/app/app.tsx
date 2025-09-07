@@ -4,17 +4,17 @@ import Box from '../components/Box';
 
 export function App() {
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif'}}>
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
       {/* Header */}
 
-      <Box 
-        backgroundColor="#7ecffe" 
-        border="2px solid #20372d" 
+      <Box
+        backgroundColor="#7ecffe"
+        border="2px solid #20372d"
         borderRadius={16}
         padding={20}
       >
         <h4>Market</h4>
-        <div style={{ display: 'flex', gap: '300px' }}>
+        <div style={{ display: 'flex', gap: '30px' }}>
           <Box backgroundColor="#0ca4fd" border="1px solid #20372d" borderRadius={8} padding={10}>
             <p>1. Market Segmentation</p>
           </Box>
@@ -22,7 +22,7 @@ export function App() {
             <p>2. Beachhead Market</p>
           </Box>
           <Box backgroundColor="#0ca4fd" border="1px solid #20372d" borderRadius={8} padding={10}>
-            <p3. End User Profile</p>
+            <p>3. End User Profile</p>
           </Box>
           <Box backgroundColor="#0ca4fd" border="1px solid #20372d" borderRadius={8} padding={10}>
             <p>4. Persona</p>
@@ -30,14 +30,14 @@ export function App() {
         </div>
       </Box>
 
-      <Box 
-        backgroundColor="#fecbeb" 
-        border="2px solid #20372d " 
+      <Box
+        backgroundColor="#fecbeb"
+        border="2px solid #20372d"
         borderRadius={16}
         padding={20}
       >
         <h4>Product</h4>
-        <div style={{ display: 'flex', gap: '300px' }}>
+        <div style={{ display: 'flex', gap: '30px' }}>
           <Box backgroundColor="#fb44b7" border="1px solid #20372d" borderRadius={8} padding={10}>
             <p>5. High Level Specs</p>
           </Box>
@@ -53,15 +53,14 @@ export function App() {
         </div>
       </Box>
 
-
-      <Box 
-        backgroundColor="#a4e5b9" 
-        border="2px solid #20372d" 
+      <Box
+        backgroundColor="#a4e5b9"
+        border="2px solid #20372d"
         borderRadius={16}
         padding={20}
       >
         <h4>Business</h4>
-        <div style={{ display: 'flex', gap: '300px' }}>
+        <div style={{ display: 'flex', gap: '30px' }}>
           <Box backgroundColor="#48ca72" border="1px solid #20372d" borderRadius={8} padding={10}>
             <p>9. Business Model</p>
           </Box>
@@ -76,7 +75,6 @@ export function App() {
           </Box>
         </div>
       </Box>
-
     </div>
   );
 }
