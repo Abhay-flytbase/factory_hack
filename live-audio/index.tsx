@@ -39,6 +39,35 @@ export class GdmLiveAudio extends LitElement {
       z-index: 10;
       text-align: center;
     }
+    .cards {
+      width: 100%;
+      color: white;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      direction: column;
+      z-index: 10;
+      position: absolute;
+      top: 10vh; 
+      left : 10px; 
+        .card {
+          width: 200px;
+          height: 150px;
+          padding: 10px;
+          border-radius: 10px;
+          margin-right: 10px;
+          
+        }
+        .blue {
+            background: rgba(113, 203, 255, 0.5);
+        }
+
+        .gray {
+            background: rgba(128, 128, 128, 0.5);
+        }
+
+      }
+
 
     .controls {
       z-index: 10;
@@ -51,7 +80,8 @@ export class GdmLiveAudio extends LitElement {
       justify-content: center;
       flex-direction: column;
       gap: 10px;
-
+    
+      
       button {
         outline: none;
         border: 1px solid rgba(255, 255, 255, 0.2);
@@ -153,6 +183,17 @@ export class GdmLiveAudio extends LitElement {
         },
         config: {
           responseModalities: [Modality.AUDIO],
+         systemInstruction: [
+          'You are a helpful and critical assistant that helps new, inexperienced users become founders.',
+          'Assume founders have already done significant work and research, as their paths are often non-linear.',
+          'Before starting the guide, inquire about their current stage in the product development process.',
+          'Intelligently pick up the process from their current stage and fill any gaps in their knowledge.',
+          'Find out the founder\'s background and skills (e.g., engineer, designer, product) to provide relevant advice.',
+          'Do not ask too many questions at the same time.',
+          'Take charge of the conversation and spend time on each process item to clarify any gaps and holes in their ideas.',
+          'The guided process includes the following steps: Market Segmentation, Beachhead Market, End User Profile, Beachhead TAM (Total Addressable Market) Size, Persona, Life Cycle Use Case, High-Level Specs, Quantify Value Proposition, Next 10 Customers, Define Core, Chart Competitive Position, Determine DMU (Decision-Making Unit), Map Customer Acquisition Process, Follow on TAM (Total Addressable Market), Design Business Model, Pricing Framework, LTV (Life-Time Value), Map Sales Process, COCA (Cost of Customer Acquisition), Identify Key Assumptions, Test Key Assumptions, Define MVBP (Minimum Viable Business Product), Show Dogs Will Eat Dog Food, Develop Product Plan.',
+          'Crucially, *before* moving to End User Profile, ask the user if they have actually collected feedback from real users.',
+        ],
           speechConfig: {
             voiceConfig: {prebuiltVoiceConfig: {voiceName: 'Orus'}},
             // languageCode: 'en-GB'
@@ -255,7 +296,26 @@ export class GdmLiveAudio extends LitElement {
   render() {
     return html`
       <div>
+        <div class="cards">
+          <div class="card blue">
+            <h3>1. Market Segmentation</h3>
+            <p>Early-Stage Entrepreneurs </p>
+          </div>
+          <div class="card gray">
+            <h3>2. Beachhead Market</h3>
+            <p> --- </p>
+          </div>
+          <div class="card gray">
+            <h3>3. End User Profile</h3>
+            <p> --- </p>
+          </div>
+          <div class="card blue">
+            <h3>4. Persona</h3>
+            <p>Strong in one area (design or engineering), weak in the other (business or technical) </p>
+          </div>
+        </div>
         <div class="controls">
+        
           <button
             id="resetButton"
             @click=${this.reset}
@@ -301,7 +361,8 @@ export class GdmLiveAudio extends LitElement {
         <div id="status"> ${this.error} </div>
         <gdm-live-audio-visuals-3d
           .inputNode=${this.inputNode}
-          .outputNode=${this.outputNode}></gdm-live-audio-visuals-3d>
+          .outputNode=${this.outputNode}>
+        </gdm-live-audio-visuals-3d>
       </div>
     `;
   }

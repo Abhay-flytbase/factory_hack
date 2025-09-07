@@ -1,6 +1,6 @@
 // Uncomment this line to use CSS modules
 // import styles from './app.module.scss';
-import Box from '../components/Box';
+import Box from './Box';
 
 export function App() {
   return (
