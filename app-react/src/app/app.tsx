@@ -16,16 +16,16 @@ export function App() {
         <h4>Market</h4>
         <div style={{ display: 'flex', gap: '300px' }}>
           <Box backgroundColor="#0ca4fd" border="1px solid #20372d" borderRadius={8} padding={10}>
-            <p>Subbox 1</p>
+            <p>1. Market Segmentation</p>
           </Box>
           <Box backgroundColor="#0ca4fd" border="1px solid #20372d" borderRadius={8} padding={10}>
-            <p>Subbox 2</p>
+            <p>2. Beachhead Market</p>
           </Box>
           <Box backgroundColor="#0ca4fd" border="1px solid #20372d" borderRadius={8} padding={10}>
-            <p>Subbox 2</p>
+            <p3. End User Profile</p>
           </Box>
           <Box backgroundColor="#0ca4fd" border="1px solid #20372d" borderRadius={8} padding={10}>
-            <p>Subbox 2</p>
+            <p>4. Persona</p>
           </Box>
         </div>
       </Box>
@@ -39,16 +39,16 @@ export function App() {
         <h4>Product</h4>
         <div style={{ display: 'flex', gap: '300px' }}>
           <Box backgroundColor="#fb44b7" border="1px solid #20372d" borderRadius={8} padding={10}>
-            <p>Subbox 1</p>
+            <p>5. High Level Specs</p>
           </Box>
           <Box backgroundColor="#fb44b7" border="1px solid #20372d" borderRadius={8} padding={10}>
-            <p>Subbox 2</p>
+            <p>6. Value Prop</p>
           </Box>
           <Box backgroundColor="#fb44b7" border="1px solid #20372d" borderRadius={8} padding={10}>
-            <p>Subbox 2</p>
+            <p>7. Competitive position</p>
           </Box>
           <Box backgroundColor="#fb44b7" border="1px solid #20372d" borderRadius={8} padding={10}>
-            <p>Subbox 2</p>
+            <p>8. Define Core</p>
           </Box>
         </div>
       </Box>
@@ -63,16 +63,16 @@ export function App() {
         <h4>Business</h4>
         <div style={{ display: 'flex', gap: '300px' }}>
           <Box backgroundColor="#48ca72" border="1px solid #20372d" borderRadius={8} padding={10}>
-            <p>Subbox 1</p>
+            <p>9. Business Model</p>
           </Box>
           <Box backgroundColor="#48ca72" border="1px solid #20372d" borderRadius={8} padding={10}>
-            <p>Subbox 2</p>
+            <p>10. Pricing Framework</p>
           </Box>
           <Box backgroundColor="#48ca72" border="1px solid #20372d" borderRadius={8} padding={10}>
-            <p>Subbox 2</p>
+            <p>11. Life Time Value</p>
           </Box>
           <Box backgroundColor="#48ca72" border="1px solid #20372d" borderRadius={8} padding={10}>
-            <p>Subbox 2</p>
+            <p>12. Customer Acquisition Cost</p>
           </Box>
         </div>
       </Box>
