@@ -2,7 +2,7 @@
 .nx
 config
 dist/
-
+*/**/.env
 
 .nx/cache
 .nx/workspace-data
@@ -12,3 +12,4 @@ dist/
 
 vite.config.*.timestamp*
 vitest.config.*.timestamp*
+node_modules
