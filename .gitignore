@@ -3,6 +3,8 @@
 config
 dist/
 */**/.env
+*/**/.env.local
+*/**/.env.*.local
 
 .nx/cache
 .nx/workspace-data
